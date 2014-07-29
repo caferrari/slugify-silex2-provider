@@ -33,11 +33,5 @@ class SlugifyServiceProvider implements ServiceProviderInterface
             return new Slugify();
         });
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function boot(Application $app)
-    {
-    }
+    
 }
