@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Caf\\Slugify\\Bridge\\Silex": "src"
+            "Caf\\Slugify\\Bridge\\Silex\\": "src"
         }
     }
 }
