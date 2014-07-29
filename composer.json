@@ -1,0 +1,24 @@
+{
+    "name": "caferrari/slugify-silex2-provider",
+    "type": "library",
+    "description": "Silex 2.x provider for slugfy",
+    "keywords": ["slug", "slugify", "silex"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos André Ferrari",
+            "email": "caferrari@gmail.com",
+            "homepage": "http://ferrari.eti.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "cocur/slugify": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Caf\\Slugify\\Bridge\\Silex": "src"
+        }
+    }
+}
