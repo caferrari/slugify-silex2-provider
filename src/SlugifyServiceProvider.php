@@ -12,7 +12,7 @@
 namespace Caf\Slugify\Bridge\Silex;
 
 use Cocur\Slugify\Slugify;
-use Silex\Application;
+use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 /**
@@ -25,13 +25,9 @@ class SlugifyServiceProvider implements ServiceProviderInterface
     /**
      * {@inheritDoc}
      */
-    public function register(Application $app)
+    public function register(Container $app)
     {
-        $app['slugify'] = $app->share(function ($app) {
-            $app->flush();
-
-            return new Slugify();
-        });
+        $app['slugify'] = new Slugify();
     }
     
 }
